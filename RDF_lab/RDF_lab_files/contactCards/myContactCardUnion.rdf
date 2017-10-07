@@ -1,0 +1,14 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#">
+  <vCard:Individual>
+    <vCard:fn>Sebas Agudelo</vCard:fn>
+    <vCard:hasGender rdf:resource="http://www.w3.org/2006/vcard/ns#Male"/>
+    <vCard:hasEmail rdf:resource="mailto:sebas@example.com"/>
+  </vCard:Individual>
+  <vCard:Individual>
+    <vCard:fn>Sara Smith</vCard:fn>
+    <vCard:hasGender rdf:resource="http://www.w3.org/2006/vcard/ns#Female"/>
+    <vCard:hasEmail rdf:resource="mailto:ssmith@example.com"/>
+  </vCard:Individual>
+</rdf:RDF>

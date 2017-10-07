@@ -1,0 +1,9 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#">
+  <vcard:Individual>
+    <vcard:fn>Sara Smith</vcard:fn>
+    <vcard:hasGender rdf:resource="http://www.w3.org/2006/vcard/ns#Female"/>
+    <vcard:hasEmail rdf:resource="mailto:ssmith@example.com"/>
+  </vcard:Individual>
+</rdf:RDF>
