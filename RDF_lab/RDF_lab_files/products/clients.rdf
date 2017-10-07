@@ -1,0 +1,37 @@
+<rdf:RDF
+  xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'
+  xmlns:pers='http://schema.org/Person#'
+  xmlns:dem='http://schema.org/Demand#'>
+
+  <pers:Person rdf:about='http://example.com/client/Sebastian'>
+    <pers:name>Sebastian</pers:name>
+    <pers:seeks>
+      <dem:Demand>
+        <dem:itemOffered rdf:resource='http://example.com/category/A1'/>
+        <dem:itemOffered rdf:resource='http://example.com/category/A2'/>
+      </dem:Demand>
+    </pers:seeks>
+    <pers:knows>
+      <pers:Person rdf:about='http://example.com/client/Mike'>
+      </pers:Person>
+    </pers:knows>
+  </pers:Person>
+
+  <pers:Person rdf:about='http://example.com/client/Juan'>
+    <pers:name>Juan</pers:name>
+    <pers:seeks>
+      <dem:Demand>
+        <dem:itemOffered rdf:resource='http://example.com/category/A3'/>
+      </dem:Demand>
+    </pers:seeks>
+  </pers:Person>
+
+  <pers:Person rdf:about='http://example.com/client/Mike'>
+    <pers:name>Mike</pers:name>
+    <pers:seeks>
+      <dem:Demand>
+        <dem:itemOffered rdf:resource='http://example.com/category/A1'/>
+      </dem:Demand>
+    </pers:seeks>
+  </pers:Person>
+</rdf:RDF>

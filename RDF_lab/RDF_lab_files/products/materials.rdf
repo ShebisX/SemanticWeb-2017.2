@@ -1,0 +1,12 @@
+<rdf:RDF
+  xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'
+  xmlns:prod='http://schema.org/Product#'>
+
+  <prod:Product rdf:about='http://example.com/material/wood'>
+    <prod:name>Wood</prod:name>
+  </prod:Product>
+
+  <prod:Product rdf:about='http://example.com/material/brass'>
+    <prod:name>Brass</prod:name>
+  </prod:Product>
+</rdf:RDF>

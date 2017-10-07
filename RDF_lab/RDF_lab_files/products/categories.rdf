@@ -1,0 +1,19 @@
+<rdf:RDF
+  xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'
+  xmlns:th='http://schema.org/Thing#'>
+
+  <th:Thing rdf:about='http://example.com/category/A1'>
+    <th:identifier>A1</th:identifier>
+    <th:name>Drums</th:name>
+  </th:Thing>
+
+  <th:Thing rdf:about='http://example.com/category/A2'>
+    <th:identifier>A2</th:identifier>
+    <th:name>Cymbals</th:name>
+  </th:Thing>
+
+  <th:Thing rdf:about='http://example.com/category/A3'>
+    <th:identifier>A3</th:identifier>
+    <th:name>Guitars</th:name>
+  </th:Thing>
+</rdf:RDF>

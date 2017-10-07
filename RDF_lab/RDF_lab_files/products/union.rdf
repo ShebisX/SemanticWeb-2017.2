@@ -1,0 +1,87 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:th="http://schema.org/Thing#"
+    xmlns:prod="http://schema.org/Product#"
+    xmlns:dem="http://schema.org/Demand#"
+    xmlns:pers="http://schema.org/Person#">
+  <pers:Person rdf:about="http://example.com/client/Juan">
+    <pers:name>Juan</pers:name>
+    <pers:seeks>
+      <dem:Demand>
+        <dem:itemOffered>
+          <th:Thing rdf:about="http://example.com/category/A3">
+            <th:identifier>A3</th:identifier>
+            <th:name>Guitars</th:name>
+          </th:Thing>
+        </dem:itemOffered>
+      </dem:Demand>
+    </pers:seeks>
+  </pers:Person>
+  <prod:Product rdf:about="http://example.com/drum/sd-1">
+    <prod:productId>sd-1</prod:productId>
+    <prod:category>
+      <th:Thing rdf:about="http://example.com/category/A1">
+        <th:identifier>A1</th:identifier>
+        <th:name>Drums</th:name>
+      </th:Thing>
+    </prod:category>
+    <prod:name>Snare drum</prod:name>
+    <prod:material>
+      <prod:Product rdf:about="http://example.com/material/wood">
+        <prod:name>Wood</prod:name>
+      </prod:Product>
+    </prod:material>
+  </prod:Product>
+  <prod:Product rdf:about="http://example.com/guitar/g-1">
+    <prod:productId>g-1</prod:productId>
+    <prod:category rdf:resource="http://example.com/category/A3"/>
+    <prod:name>Electric guitar</prod:name>
+    <prod:material rdf:resource="http://example.com/material/wood"/>
+  </prod:Product>
+  <prod:Product rdf:about="http://example.com/guitar/g-2">
+    <prod:productId>g-2</prod:productId>
+    <prod:category rdf:resource="http://example.com/category/A3"/>
+    <prod:name>Guitar strings</prod:name>
+    <prod:material>
+      <prod:Product rdf:about="http://example.com/material/brass">
+        <prod:name>Brass</prod:name>
+      </prod:Product>
+    </prod:material>
+  </prod:Product>
+  <pers:Person rdf:about="http://example.com/client/Sebastian">
+    <pers:name>Sebastian</pers:name>
+    <pers:seeks>
+      <dem:Demand>
+        <dem:itemOffered rdf:resource="http://example.com/category/A1"/>
+        <dem:itemOffered>
+          <th:Thing rdf:about="http://example.com/category/A2">
+            <th:identifier>A2</th:identifier>
+            <th:name>Cymbals</th:name>
+          </th:Thing>
+        </dem:itemOffered>
+      </dem:Demand>
+    </pers:seeks>
+    <pers:knows>
+      <pers:Person rdf:about="http://example.com/client/Mike">
+        <pers:name>Mike</pers:name>
+        <pers:seeks>
+          <dem:Demand>
+            <dem:itemOffered rdf:resource="http://example.com/category/A1"/>
+          </dem:Demand>
+        </pers:seeks>
+      </pers:Person>
+    </pers:knows>
+  </pers:Person>
+  <prod:Product rdf:about="http://example.com/cymbal/c-2">
+    <prod:productId>c-2</prod:productId>
+    <prod:category rdf:resource="http://example.com/category/A2"/>
+    <prod:name>Ride</prod:name>
+    <prod:material rdf:resource="http://example.com/material/brass"/>
+  </prod:Product>
+  <prod:Product rdf:about="http://example.com/cymbal/c-1">
+    <prod:productId>c-1</prod:productId>
+    <prod:category rdf:resource="http://example.com/category/A2"/>
+    <prod:name>Crash</prod:name>
+    <prod:material rdf:resource="http://example.com/material/brass"/>
+  </prod:Product>
+</rdf:RDF>

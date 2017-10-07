@@ -1,0 +1,39 @@
+<rdf:RDF
+  xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'
+  xmlns:prod='http://schema.org/Product#'>
+
+  <prod:Product rdf:about='http://example.com/drum/sd-1'>
+    <prod:productId>sd-1</prod:productId>
+    <prod:category rdf:resource='http://example.com/category/A1'/>
+    <prod:name>Snare drum</prod:name>
+    <prod:material rdf:resource='http://example.com/material/wood'/>
+  </prod:Product>
+
+  <prod:Product rdf:about='http://example.com/cymbal/c-1'>
+    <prod:productId>c-1</prod:productId>
+    <prod:category rdf:resource='http://example.com/category/A2'/>
+    <prod:name>Crash</prod:name>
+    <prod:material rdf:resource='http://example.com/material/brass'/>
+  </prod:Product>
+
+  <prod:Product rdf:about='http://example.com/cymbal/c-2'>
+    <prod:productId>c-2</prod:productId>
+    <prod:category rdf:resource='http://example.com/category/A2'/>
+    <prod:name>Ride</prod:name>
+    <prod:material rdf:resource='http://example.com/material/brass'/>
+  </prod:Product>
+
+  <prod:Product rdf:about='http://example.com/guitar/g-1'>
+    <prod:productId>g-1</prod:productId>
+    <prod:category rdf:resource='http://example.com/category/A3'/>
+    <prod:name>Electric guitar</prod:name>
+    <prod:material rdf:resource='http://example.com/material/wood'/>
+  </prod:Product>
+
+  <prod:Product rdf:about='http://example.com/guitar/g-2'>
+    <prod:productId>g-2</prod:productId>
+    <prod:category rdf:resource='http://example.com/category/A3'/>
+    <prod:name>Guitar strings</prod:name>
+    <prod:material rdf:resource='http://example.com/material/brass'/>
+  </prod:Product>
+</rdf:RDF>
