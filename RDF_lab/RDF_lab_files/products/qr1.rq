@@ -1,0 +1,16 @@
+# Kind of products sought by "Sebastian"
+PREFIX th: <http://schema.org/Thing#>
+PREFIX dem: <http://schema.org/Demand#>
+PREFIX pers: <http://schema.org/Person#>
+
+SELECT ?person ?categoryId ?categoryName
+WHERE {
+  {
+    ?person pers:name "Sebastian";
+            pers:seeks ?demand.
+  }
+  {
+    ?demand dem:itemOffered ?categoryId.
+    ?categoryId th:name ?categoryName.
+  }
+}

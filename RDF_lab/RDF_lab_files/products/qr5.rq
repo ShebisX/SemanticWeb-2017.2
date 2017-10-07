@@ -1,0 +1,21 @@
+# Categories in common
+PREFIX th: <http://schema.org/Thing#>
+PREFIX dem: <http://schema.org/Demand#>
+PREFIX pers: <http://schema.org/Person#>
+
+SELECT ?personName1 ?personName2 ?categoryN1
+WHERE {
+  {
+    ?person1 pers:seeks ?demand1;
+            pers:name ?personName1.
+    ?demand1 dem:itemOffered ?category1.
+    ?category1 th:name ?categoryN1.
+  }
+  {
+    ?person2 pers:seeks ?demand2;
+            pers:name ?personName2.
+    ?demand2 dem:itemOffered ?category2.
+  }
+  FILTER (?person1 != ?person2).
+  FILTER (?category1 = ?category2).
+}

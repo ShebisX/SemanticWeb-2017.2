@@ -1,0 +1,17 @@
+# Who seeks "Snare drum"
+PREFIX dem: <http://schema.org/Demand#>
+PREFIX pers: <http://schema.org/Person#>
+PREFIX prod: <http://schema.org/Product#>
+
+SELECT ?personName
+WHERE {
+  {
+    ?product prod:name "Snare drum";
+            prod:category ?category.
+  }
+  ?demand dem:itemOffered ?category.
+  {
+    ?person pers:seeks ?demand;
+            pers:name ?personName.
+  }
+}

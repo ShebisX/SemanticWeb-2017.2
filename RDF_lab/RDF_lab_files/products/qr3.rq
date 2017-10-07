@@ -1,0 +1,17 @@
+# Material of the products from the category "Guitars"
+PREFIX th: <http://schema.org/Thing#>
+PREFIX prod: <http://schema.org/Product#>
+
+SELECT ?categoryName ?materialName ?productName
+WHERE {
+  {
+    ?product prod:category ?category;
+            prod:material ?material;
+            prod:name ?productName.
+  }
+  {
+    ?category th:name "Guitars";
+              th:name ?categoryName.
+  }
+  ?material prod:name ?materialName.
+}
