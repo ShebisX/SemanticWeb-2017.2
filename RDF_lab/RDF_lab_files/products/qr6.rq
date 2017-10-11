@@ -1,0 +1,9 @@
+# Who knows Mike
+PREFIX pers: <http://schema.org/Person#>
+
+SELECT ?personName ?known_name
+WHERE {
+  ?person pers:name ?personName.
+  OPTIONAL { ?person pers:knows ?known.
+              ?known pers:name ?known_name. }
+}
