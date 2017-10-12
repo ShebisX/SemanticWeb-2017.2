@@ -1,0 +1,72 @@
+#Se pretende listar todas las locaciones con sus respectivas latitud y longitud, que cumplan con la propiedad label
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+SELECT DISTINCT ?location ?latitude ?longitude
+WHERE { 
+   ?resource rdfs:label ?location;
+             geo:lat ?latitude; 
+             geo:long ?longitude
+}
+
+
+#Se listan los recursos con sus respectivos valores, sus propiedades asociadas deben cumplir con los valores de los objetos establecidos
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX status: <http://www.w3.org/2003/06/sw-vocab-status/ns#>
+SELECT DISTINCT ?resource ?value
+WHERE { 
+   ?resource rdfs:range ?value.
+   ?value rdfs:label 'Call'; 
+          status:term_status 'deprecated' 
+}
+
+
+#Se listan los recursos de distintas propiedades con sus respectivos valores, se aplica ademas un filtro sobre los valores de dichos recursos
+
+PREFIX swc: <http://data.semanticweb.org/ns/swc/ontology#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT DISTINCT ?resource ?value
+WHERE { 
+   {
+      ?resource swc:room ?value
+      FILTER regex(?value, 'Imperial')
+   } 
+   {
+      ?resource rdfs:label 'Lunch'
+   } 
+}
+
+
+#Se listan los recursos con sus respectivas descripciones, el valor de dichas descripciones solo deben ser Welcome o Logistique
+
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+SELECT DISTINCT ?resource ?description
+WHERE { 
+   {
+      ?resource dc:description ?description
+      FILTER regex(?description, 'Welcome')
+   }
+   UNION 
+   {
+      ?resource dc:description ?description
+      FILTER regex(?description, 'Logistique')
+   }
+}
+
+
+#Se listan los recursos con sus nombres, y opcionalmente con sus apellidos o correo electronico
+
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+SELECT DISTINCT ?resource ?first ?last ?email
+WHERE { 
+   {
+      ?resource foaf:firstName ?first.
+      OPTIONAL {
+         ?resource foaf:lastName ?last
+      }.
+      OPTIONAL {
+         ?resource foaf:mbox ?email
+      }
+   }
+}
