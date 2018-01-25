@@ -1,0 +1,261 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://www.p20172.fake/animal#"
+    xmlns:j.1="https://www.anims.fake/animal#">
+  <j.0:bear rdf:about="http://www.p20172.fake/OsoPanda">
+    <j.1:family_sibling>
+      <j.0:bear rdf:about="http://www.p20172.fake/OsoPardo">
+        <j.1:family_sibling rdf:resource="http://www.p20172.fake/OsoPanda"/>
+        <j.1:family_sibling>
+          <j.0:bear rdf:about="http://www.p20172.fake/OsoPolar">
+            <j.1:shareHabitat>
+              <j.0:sea_animal rdf:about="http://www.p20172.fake/Pinguino">
+                <j.1:eat>
+                  <j.0:sea_animal rdf:about="http://www.p20172.fake/Pez">
+                    <j.1:family_sibling>
+                      <j.0:sea_animal rdf:about="http://www.p20172.fake/Tiburon">
+                        <j.1:family_sibling rdf:resource="http://www.p20172.fake/Pinguino"/>
+                        <j.1:family_sibling rdf:resource="http://www.p20172.fake/Pez"/>
+                        <j.1:family_sibling>
+                          <j.0:sea_animal rdf:about="http://www.p20172.fake/Ballena">
+                            <j.1:family_sibling rdf:resource="http://www.p20172.fake/Pinguino"/>
+                            <j.1:family_sibling rdf:resource="http://www.p20172.fake/Pez"/>
+                            <j.1:family_sibling>
+                              <j.0:sea_animal rdf:about="http://www.p20172.fake/Delfin">
+                                <j.1:family_sibling rdf:resource="http://www.p20172.fake/Pinguino"/>
+                                <j.1:family_sibling rdf:resource="http://www.p20172.fake/Pez"/>
+                                <j.1:family_sibling rdf:resource="http://www.p20172.fake/Ballena"/>
+                                <j.1:family_sibling rdf:resource="http://www.p20172.fake/Tiburon"/>
+                                <j.1:family_sibling>
+                                  <j.0:sea_animal rdf:about="http://www.p20172.fake/Besugo">
+                                    <j.1:family_sibling rdf:resource="http://www.p20172.fake/Pinguino"/>
+                                    <j.1:family_sibling rdf:resource="http://www.p20172.fake/Pez"/>
+                                    <j.1:family_sibling rdf:resource="http://www.p20172.fake/Ballena"/>
+                                    <j.1:family_sibling rdf:resource="http://www.p20172.fake/Delfin"/>
+                                    <j.1:family_sibling rdf:resource="http://www.p20172.fake/Tiburon"/>
+                                    <j.1:hasWings>false</j.1:hasWings>
+                                    <j.1:hasLegs>false</j.1:hasLegs>
+                                    <j.1:name>besugo</j.1:name>
+                                  </j.0:sea_animal>
+                                </j.1:family_sibling>
+                                <j.1:hasWings>false</j.1:hasWings>
+                                <j.1:hasLegs>false</j.1:hasLegs>
+                                <j.1:name>delfin</j.1:name>
+                              </j.0:sea_animal>
+                            </j.1:family_sibling>
+                            <j.1:family_sibling rdf:resource="http://www.p20172.fake/Tiburon"/>
+                            <j.1:family_sibling rdf:resource="http://www.p20172.fake/Besugo"/>
+                            <j.1:hasWings>false</j.1:hasWings>
+                            <j.1:hasLegs>false</j.1:hasLegs>
+                            <j.1:name>ballena</j.1:name>
+                          </j.0:sea_animal>
+                        </j.1:family_sibling>
+                        <j.1:family_sibling rdf:resource="http://www.p20172.fake/Delfin"/>
+                        <j.1:family_sibling rdf:resource="http://www.p20172.fake/Besugo"/>
+                        <j.1:hasWings>false</j.1:hasWings>
+                        <j.1:hasLegs>false</j.1:hasLegs>
+                        <j.1:name>tiburon</j.1:name>
+                      </j.0:sea_animal>
+                    </j.1:family_sibling>
+                    <j.1:family_sibling rdf:resource="http://www.p20172.fake/Besugo"/>
+                    <j.1:family_sibling rdf:resource="http://www.p20172.fake/Pinguino"/>
+                    <j.1:hasWings>false</j.1:hasWings>
+                    <j.1:family_sibling rdf:resource="http://www.p20172.fake/Delfin"/>
+                    <j.1:family_sibling rdf:resource="http://www.p20172.fake/Ballena"/>
+                    <j.1:eatenBy>
+                      <j.0:bird rdf:about="http://www.p20172.fake/Pajaro">
+                        <j.1:hasLegs>true</j.1:hasLegs>
+                        <j.1:family_sibling rdf:resource="http://www.p20172.fake/Pinguino"/>
+                        <j.1:family_sibling>
+                          <j.0:domestic_animal rdf:about="http://www.p20172.fake/Canario">
+                            <j.1:family_sibling rdf:resource="http://www.p20172.fake/Pajaro"/>
+                            <j.1:shareHabitat>
+                              <j.0:domestic_animal rdf:about="http://www.p20172.fake/Hamster">
+                                <j.1:shareHabitat rdf:resource="http://www.p20172.fake/Canario"/>
+                                <j.1:shareHabitat>
+                                  <j.0:domestic_animal rdf:about="http://www.p20172.fake/Gato">
+                                    <j.1:shareHabitat rdf:resource="http://www.p20172.fake/Canario"/>
+                                    <j.1:shareHabitat rdf:resource="http://www.p20172.fake/Hamster"/>
+                                    <j.1:shareHabitat>
+                                      <j.0:domestic_animal rdf:about="http://www.p20172.fake/Perro">
+                                        <j.1:shareHabitat rdf:resource="http://www.p20172.fake/Canario"/>
+                                        <j.1:shareHabitat rdf:resource="http://www.p20172.fake/Hamster"/>
+                                        <j.1:shareHabitat rdf:resource="http://www.p20172.fake/Gato"/>
+                                        <j.1:hasLegs>true</j.1:hasLegs>
+                                        <j.1:name>perro</j.1:name>
+                                      </j.0:domestic_animal>
+                                    </j.1:shareHabitat>
+                                    <j.1:hasLegs>true</j.1:hasLegs>
+                                    <j.1:name>gato</j.1:name>
+                                  </j.0:domestic_animal>
+                                </j.1:shareHabitat>
+                                <j.1:shareHabitat rdf:resource="http://www.p20172.fake/Perro"/>
+                                <j.1:hasLegs>true</j.1:hasLegs>
+                                <j.1:name>hamster</j.1:name>
+                              </j.0:domestic_animal>
+                            </j.1:shareHabitat>
+                            <j.1:shareHabitat rdf:resource="http://www.p20172.fake/Gato"/>
+                            <j.1:shareHabitat rdf:resource="http://www.p20172.fake/Perro"/>
+                            <j.1:hasWings>true</j.1:hasWings>
+                            <j.1:hasLegs>true</j.1:hasLegs>
+                            <j.1:name>canario</j.1:name>
+                          </j.0:domestic_animal>
+                        </j.1:family_sibling>
+                        <j.1:hasWings>true</j.1:hasWings>
+                        <j.1:eat rdf:resource="http://www.p20172.fake/Pez"/>
+                        <j.1:family_sibling>
+                          <j.0:bird rdf:about="http://www.p20172.fake/Papagayo">
+                            <j.1:family_sibling rdf:resource="http://www.p20172.fake/Pajaro"/>
+                            <j.1:family_sibling>
+                              <j.0:bird rdf:about="http://www.p20172.fake/Aguila">
+                                <j.1:family_sibling rdf:resource="http://www.p20172.fake/Pajaro"/>
+                                <j.1:family_sibling>
+                                  <j.0:bird rdf:about="http://www.p20172.fake/Buitre">
+                                    <j.1:family_sibling rdf:resource="http://www.p20172.fake/Pajaro"/>
+                                    <j.1:family_sibling rdf:resource="http://www.p20172.fake/Aguila"/>
+                                    <j.1:family_sibling rdf:resource="http://www.p20172.fake/Papagayo"/>
+                                    <j.1:hasWings>true</j.1:hasWings>
+                                    <j.1:hasLegs>true</j.1:hasLegs>
+                                    <j.1:name>buitre</j.1:name>
+                                  </j.0:bird>
+                                </j.1:family_sibling>
+                                <j.1:family_sibling rdf:resource="http://www.p20172.fake/Papagayo"/>
+                                <j.1:hasWings>true</j.1:hasWings>
+                                <j.1:hasLegs>true</j.1:hasLegs>
+                                <j.1:name>aguila</j.1:name>
+                              </j.0:bird>
+                            </j.1:family_sibling>
+                            <j.1:family_sibling rdf:resource="http://www.p20172.fake/Buitre"/>
+                            <j.1:hasWings>true</j.1:hasWings>
+                            <j.1:hasLegs>true</j.1:hasLegs>
+                            <j.1:name>papagayo</j.1:name>
+                          </j.0:bird>
+                        </j.1:family_sibling>
+                        <j.1:family_sibling rdf:resource="http://www.p20172.fake/Buitre"/>
+                        <j.1:family_sibling rdf:resource="http://www.p20172.fake/Aguila"/>
+                        <j.1:name>pajaro</j.1:name>
+                      </j.0:bird>
+                    </j.1:eatenBy>
+                    <j.1:eatenBy rdf:resource="http://www.p20172.fake/Pinguino"/>
+                    <j.1:name>pez</j.1:name>
+                    <j.1:hasLegs>false</j.1:hasLegs>
+                  </j.0:sea_animal>
+                </j.1:eat>
+                <j.1:hasWings>true</j.1:hasWings>
+                <j.1:family_sibling rdf:resource="http://www.p20172.fake/Pajaro"/>
+                <j.1:shareHabitat rdf:resource="http://www.p20172.fake/Pez"/>
+                <j.1:eatenBy>
+                  <j.0:reptile rdf:about="http://www.p20172.fake/Cocodrilo">
+                    <j.1:family_sibling>
+                      <j.0:reptile rdf:about="http://www.p20172.fake/Lagarto">
+                        <j.1:family_sibling rdf:resource="http://www.p20172.fake/Cocodrilo"/>
+                        <j.1:family_sibling>
+                          <j.0:reptile rdf:about="http://www.p20172.fake/Iguana">
+                            <j.1:family_sibling rdf:resource="http://www.p20172.fake/Cocodrilo"/>
+                            <j.1:family_sibling>
+                              <j.0:reptile rdf:about="http://www.p20172.fake/Serpiente">
+                                <j.1:family_sibling rdf:resource="http://www.p20172.fake/Cocodrilo"/>
+                                <j.1:family_sibling rdf:resource="http://www.p20172.fake/Iguana"/>
+                                <j.1:family_sibling>
+                                  <j.0:reptile rdf:about="http://www.p20172.fake/Lagartija">
+                                    <j.1:family_sibling rdf:resource="http://www.p20172.fake/Cocodrilo"/>
+                                    <j.1:family_sibling rdf:resource="http://www.p20172.fake/Iguana"/>
+                                    <j.1:family_sibling rdf:resource="http://www.p20172.fake/Serpiente"/>
+                                    <j.1:family_sibling rdf:resource="http://www.p20172.fake/Lagarto"/>
+                                    <j.1:hasLegs>true</j.1:hasLegs>
+                                    <j.1:name>lagartija</j.1:name>
+                                  </j.0:reptile>
+                                </j.1:family_sibling>
+                                <j.1:family_sibling rdf:resource="http://www.p20172.fake/Lagarto"/>
+                                <j.1:name>serpiente</j.1:name>
+                              </j.0:reptile>
+                            </j.1:family_sibling>
+                            <j.1:family_sibling rdf:resource="http://www.p20172.fake/Lagartija"/>
+                            <j.1:family_sibling rdf:resource="http://www.p20172.fake/Lagarto"/>
+                            <j.1:hasLegs>true</j.1:hasLegs>
+                            <j.1:name>iguana</j.1:name>
+                          </j.0:reptile>
+                        </j.1:family_sibling>
+                        <j.1:family_sibling rdf:resource="http://www.p20172.fake/Serpiente"/>
+                        <j.1:family_sibling rdf:resource="http://www.p20172.fake/Lagartija"/>
+                        <j.1:hasLegs>true</j.1:hasLegs>
+                        <j.1:name>lagarto</j.1:name>
+                      </j.0:reptile>
+                    </j.1:family_sibling>
+                    <j.1:shareHabitat>
+                      <j.1:animal rdf:about="http://www.p20172.fake/tigre">
+                        <j.1:shareHabitat rdf:resource="http://www.p20172.fake/Cocodrilo"/>
+                        <j.1:shareHabitat>
+                          <j.1:animal rdf:about="http://www.p20172.fake/Jirafa">
+                            <j.1:shareHabitat rdf:resource="http://www.p20172.fake/Cocodrilo"/>
+                            <j.1:shareHabitat>
+                              <j.1:animal rdf:about="http://www.p20172.fake/Leon">
+                                <j.1:shareHabitat rdf:resource="http://www.p20172.fake/Cocodrilo"/>
+                                <j.1:shareHabitat rdf:resource="http://www.p20172.fake/Jirafa"/>
+                                <j.1:shareHabitat>
+                                  <j.1:animal rdf:about="http://www.p20172.fake/Mono">
+                                    <j.1:shareHabitat rdf:resource="http://www.p20172.fake/Cocodrilo"/>
+                                    <j.1:shareHabitat rdf:resource="http://www.p20172.fake/Jirafa"/>
+                                    <j.1:shareHabitat rdf:resource="http://www.p20172.fake/Leon"/>
+                                    <j.1:shareHabitat rdf:resource="http://www.p20172.fake/tigre"/>
+                                    <j.1:belongs rdf:resource="https://www.anims.fake/animal#zoologico"/>
+                                    <j.1:hasLegs>true</j.1:hasLegs>
+                                    <j.1:name>mono</j.1:name>
+                                  </j.1:animal>
+                                </j.1:shareHabitat>
+                                <j.1:shareHabitat rdf:resource="http://www.p20172.fake/tigre"/>
+                                <j.1:belongs rdf:resource="https://www.anims.fake/animal#zoologico"/>
+                                <j.1:hasLegs>true</j.1:hasLegs>
+                                <j.1:name>leon</j.1:name>
+                              </j.1:animal>
+                            </j.1:shareHabitat>
+                            <j.1:shareHabitat rdf:resource="http://www.p20172.fake/Mono"/>
+                            <j.1:shareHabitat rdf:resource="http://www.p20172.fake/tigre"/>
+                            <j.1:belongs rdf:resource="https://www.anims.fake/animal#zoologico"/>
+                            <j.1:hasLegs>true</j.1:hasLegs>
+                            <j.1:name>jirafa</j.1:name>
+                          </j.1:animal>
+                        </j.1:shareHabitat>
+                        <j.1:shareHabitat rdf:resource="http://www.p20172.fake/Leon"/>
+                        <j.1:shareHabitat rdf:resource="http://www.p20172.fake/Mono"/>
+                        <j.1:belongs rdf:resource="https://www.anims.fake/animal#zoologico"/>
+                        <j.1:hasLegs>true</j.1:hasLegs>
+                        <j.1:name>tigre</j.1:name>
+                      </j.1:animal>
+                    </j.1:shareHabitat>
+                    <j.1:shareHabitat rdf:resource="http://www.p20172.fake/Mono"/>
+                    <j.1:family_sibling rdf:resource="http://www.p20172.fake/Iguana"/>
+                    <j.1:eat rdf:resource="http://www.p20172.fake/Pinguino"/>
+                    <j.1:belongs rdf:resource="https://www.anims.fake/animal#zoologico"/>
+                    <j.1:family_sibling rdf:resource="http://www.p20172.fake/Lagartija"/>
+                    <j.1:hasLegs>true</j.1:hasLegs>
+                    <j.1:shareHabitat rdf:resource="http://www.p20172.fake/Leon"/>
+                    <j.1:shareHabitat rdf:resource="http://www.p20172.fake/Jirafa"/>
+                    <j.1:name>cocodrilo</j.1:name>
+                    <j.1:family_sibling rdf:resource="http://www.p20172.fake/Serpiente"/>
+                  </j.0:reptile>
+                </j.1:eatenBy>
+                <j.1:hasLegs>true</j.1:hasLegs>
+                <j.1:shareHabitat rdf:resource="http://www.p20172.fake/Besugo"/>
+                <j.1:shareHabitat rdf:resource="http://www.p20172.fake/OsoPolar"/>
+                <j.1:shareHabitat rdf:resource="http://www.p20172.fake/Tiburon"/>
+                <j.1:name>pinguino</j.1:name>
+                <j.1:shareHabitat rdf:resource="http://www.p20172.fake/Ballena"/>
+                <j.1:shareHabitat rdf:resource="http://www.p20172.fake/Delfin"/>
+              </j.0:sea_animal>
+            </j.1:shareHabitat>
+            <j.1:family_sibling rdf:resource="http://www.p20172.fake/OsoPanda"/>
+            <j.1:family_sibling rdf:resource="http://www.p20172.fake/OsoPardo"/>
+            <j.1:hasLegs>true</j.1:hasLegs>
+            <j.1:name>oso polar</j.1:name>
+          </j.0:bear>
+        </j.1:family_sibling>
+        <j.1:hasLegs>true</j.1:hasLegs>
+        <j.1:name>oso pardo</j.1:name>
+      </j.0:bear>
+    </j.1:family_sibling>
+    <j.1:family_sibling rdf:resource="http://www.p20172.fake/OsoPolar"/>
+    <j.1:hasLegs>true</j.1:hasLegs>
+    <j.1:name>oso panda</j.1:name>
+  </j.0:bear>
+</rdf:RDF>
