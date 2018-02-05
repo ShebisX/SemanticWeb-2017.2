@@ -34,10 +34,10 @@
         <Class IRI="#Sibling"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#Alias"/>
+        <Class IRI="#Place"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Place"/>
+        <DataProperty IRI="#Alias"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Person"/>
@@ -58,10 +58,10 @@
         <Class IRI="#Religion"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Animal"/>
+        <Class IRI="#Pet"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Pet"/>
+        <Class IRI="#Animal"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#SocialRange"/>
@@ -70,10 +70,10 @@
         <ObjectProperty IRI="#IsSibling"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Object"/>
+        <ObjectProperty IRI="#HasReligion"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#HasReligion"/>
+        <Class IRI="#Object"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Bastard"/>
@@ -109,10 +109,10 @@
         <ObjectProperty IRI="#IsAlly"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#HasRelation"/>
+        <Class IRI="#Family"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Family"/>
+        <ObjectProperty IRI="#HasRelation"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#Bastard"/>
@@ -347,6 +347,90 @@
         <DataProperty IRI="#SocialRange"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Animal"/>
+                <Variable IRI="urn:swrl#x"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Person"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#BelongsTo"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#Pet"/>
+                <Variable IRI="urn:swrl#x"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Person"/>
+                <Variable IRI="urn:swrl#x"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#City"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Zone"/>
+                <Variable IRI="urn:swrl#z"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#IsPlacedIn"/>
+                <Variable IRI="urn:swrl#y"/>
+                <Variable IRI="urn:swrl#z"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#IsPlacedIn"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#z"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Person"/>
+                <Variable IRI="urn:swrl#x"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Person"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Person"/>
+                <Variable IRI="urn:swrl#z"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#IsOffspring"/>
+                <Variable IRI="urn:swrl#y"/>
+                <Variable IRI="urn:swrl#x"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#IsOffspring"/>
+                <Variable IRI="urn:swrl#z"/>
+                <Variable IRI="urn:swrl#x"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#IsSibling"/>
+                <Variable IRI="urn:swrl#y"/>
+                <Variable IRI="urn:swrl#z"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
 </Ontology>
 
 
