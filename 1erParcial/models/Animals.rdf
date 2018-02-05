@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+  <rdfs:Class rdf:about="https://www.anims.fake/animal#animal">
+    <rdfs:label>animal</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="https://www.anims.fake/animal#domestic_animal">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:subClassOf rdf:resource="#animal"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="https://www.anims.fake/animal#sea_animal">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:subClassOf rdf:resource="#animal"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="https://www.anims.fake/animal#bird">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:subClassOf rdf:resource="#animal"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="https://www.anims.fake/animal#bear">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:subClassOf rdf:resource="#animal"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="https://www.anims.fake/animal#reptile">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:subClassOf rdf:resource="#animal"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="https://www.anims.fake/animal#zoologico">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdfs:Class>
+
+  <rdf:Property rdf:about="https://www.anims.fake/animal#family_sibling">
+    <rdfs:label>family sibling</rdfs:label>
+    <rdfs:range rdf:resource="#animal"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="https://www.anims.fake/animal#name">
+    <rdfs:label>name</rdfs:label>
+    <rdfs:range rdf:resource="#animal"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="https://www.anims.fake/animal#hasLegs">
+    <rdfs:label>has legs</rdfs:label>
+    <rdfs:range rdf:resource="#animal"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="https://www.anims.fake/animal#hasWings">
+    <rdfs:label>has wings</rdfs:label>
+    <rdfs:range rdf:resource="#animal"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="https://www.anims.fake/animal#belongs">
+    <rdfs:label>belongs</rdfs:label>
+    <rdfs:range rdf:resource="#animal"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="https://www.anims.fake/animal#eat">
+    <rdfs:label>eat</rdfs:label>
+    <rdfs:range rdf:resource="#animal"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="https://www.anims.fake/animal#eatenBy">
+    <rdfs:label>eaten by</rdfs:label>
+    <rdfs:range rdf:resource="#animal"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="https://www.anims.fake/animal#shareHabitat">
+    <rdfs:label>share habitat</rdfs:label>
+    <rdfs:range rdf:resource="#animal"/>
+  </rdf:Property>
+</rdf:RDF>

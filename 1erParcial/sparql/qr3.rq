@@ -1,0 +1,12 @@
+# Which animal has a relation with a penguin and which of those animals have a relation with domestic animals
+PREFIX animal: <https://www.anims.fake/animal#>
+PREFIX rdfs: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?animal
+WHERE {
+  ?penguin animal:name "pinguino";
+    ?relation1 ?animal1.
+  ?animal1 ?relation2 ?animal.
+  ?animal rdfs:type ?type.
+  FILTER regex(str(?type), "domestic", "i")
+}

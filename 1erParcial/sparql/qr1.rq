@@ -1,0 +1,21 @@
+# Name and category of animal with no legs neither wings
+PREFIX animal: <https://www.anims.fake/animal#>
+PREFIX rdfs: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?name ?type
+WHERE {
+  {
+    {
+      ?animal animal:name ?name;
+        animal:hasWings "false";
+        animal:hasLegs "false".
+    }
+    UNION
+    {
+      ?animal animal:name ?name.
+      FILTER NOT EXISTS { ?animal animal:hasWings ?wings }
+      FILTER NOT EXISTS { ?animal animal:hasLegs ?legs }
+    }
+  }
+  ?animal rdfs:type ?type
+}

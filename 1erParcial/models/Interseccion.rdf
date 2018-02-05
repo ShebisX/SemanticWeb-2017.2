@@ -1,0 +1,10 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://www.p20172.fake/animal#"
+    xmlns:j.1="https://www.anims.fake/animal#">
+  <j.0:sea_animal rdf:about="http://www.p20172.fake/Pinguino">
+    <j.1:hasWings>true</j.1:hasWings>
+    <j.1:hasLegs>true</j.1:hasLegs>
+    <j.1:name>pinguino</j.1:name>
+  </j.0:sea_animal>
+</rdf:RDF>

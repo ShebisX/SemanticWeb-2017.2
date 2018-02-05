@@ -1,0 +1,14 @@
+#
+PREFIX animal: <https://www.anims.fake/animal#>
+
+SELECT *
+WHERE {
+  ?hunter animal:shareHabitat ?prey;
+    animal:eat ?prey.
+  OPTIONAL {
+    ?hunter animal:hasWings ?hunterHasWings;
+      animal:hasLegs ?hunterHasLegs.
+    ?prey animal:hasWings ?preyHasWings;
+      animal:hasLegs ?preyHasLegs.
+  }
+}
