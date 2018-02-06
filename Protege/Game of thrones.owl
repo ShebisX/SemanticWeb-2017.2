@@ -6,7 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.semanticweb.org/steevens/ontologies/2018/0/untitled-ontology-3">
-    <Prefix name="" IRI="http://www.semanticweb.org/steevens/ontologies/2018/0/untitled-ontology-3"/>
+    <Prefix name="" IRI="http://www.semanticweb.org/steevens/ontologies/2018/0/untitled-ontology-3#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -19,16 +19,10 @@
         <Class IRI="#Organization"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Alias"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Slogan"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Name"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#Name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Alias"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Sibling"/>
@@ -37,7 +31,10 @@
         <Class IRI="#Place"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#Alias"/>
+        <NamedIndividual IRI="#Faceless_Men"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Arya_Stark"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Person"/>
@@ -46,13 +43,19 @@
         <DataProperty IRI="#SocialRange"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#North"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Northmen"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#BelongsTo"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Member"/>
+        <DataProperty IRI="#Slogan"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#Slogan"/>
+        <Class IRI="#Member"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Religion"/>
@@ -64,22 +67,25 @@
         <Class IRI="#Animal"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#SocialRange"/>
+        <NamedIndividual IRI="#Sansa_Stark"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#IsSibling"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#HasReligion"/>
+        <Class IRI="#Object"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Object"/>
+        <ObjectProperty IRI="#HasReligion"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Bastard"/>
     </Declaration>
     <Declaration>
         <Class IRI="#City"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Old_Gods_of_the_Forest"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#IsMarried"/>
@@ -91,16 +97,28 @@
         <ObjectProperty IRI="#IsMember"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Eddard_Stark"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#IsPlacedIn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jon_Snow"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Stark"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#IsOffspring"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Zone"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Owner"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Zone"/>
+        <NamedIndividual IRI="#Winterfell"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#IsOwner"/>
@@ -113,6 +131,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#HasRelation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Many-Faced_God"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#Bastard"/>
@@ -217,63 +238,206 @@
     </DisjointClasses>
     <ClassAssertion>
         <Class IRI="#Person"/>
-        <NamedIndividual IRI="#Alias"/>
+        <NamedIndividual IRI="#Arya_Stark"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Animal"/>
-        <NamedIndividual IRI="#Name"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Family"/>
-        <NamedIndividual IRI="#Name"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Object"/>
-        <NamedIndividual IRI="#Name"/>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#Eddard_Stark"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Organization"/>
-        <NamedIndividual IRI="#Name"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Person"/>
-        <NamedIndividual IRI="#Name"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Place"/>
-        <NamedIndividual IRI="#Name"/>
+        <NamedIndividual IRI="#Faceless_Men"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Religion"/>
-        <NamedIndividual IRI="#Name"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Family"/>
-        <NamedIndividual IRI="#Slogan"/>
+        <NamedIndividual IRI="#Faceless_Men"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Person"/>
-        <NamedIndividual IRI="#SocialRange"/>
+        <NamedIndividual IRI="#Jon_Snow"/>
     </ClassAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#Alias"/>
-        <NamedIndividual IRI="#Alias"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
-    </DataPropertyAssertion>
+    <ClassAssertion>
+        <Class IRI="#Religion"/>
+        <NamedIndividual IRI="#Many-Faced_God"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Zone"/>
+        <NamedIndividual IRI="#North"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Organization"/>
+        <NamedIndividual IRI="#Northmen"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Religion"/>
+        <NamedIndividual IRI="#Old_Gods_of_the_Forest"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#Sansa_Stark"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Family"/>
+        <NamedIndividual IRI="#Stark"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Winterfell"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasReligion"/>
+        <NamedIndividual IRI="#Arya_Stark"/>
+        <NamedIndividual IRI="#Many-Faced_God"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsMember"/>
+        <NamedIndividual IRI="#Arya_Stark"/>
+        <NamedIndividual IRI="#Stark"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsOffspring"/>
+        <NamedIndividual IRI="#Arya_Stark"/>
+        <NamedIndividual IRI="#Eddard_Stark"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsMember"/>
+        <NamedIndividual IRI="#Eddard_Stark"/>
+        <NamedIndividual IRI="#Stark"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#LivesIn"/>
+        <NamedIndividual IRI="#Eddard_Stark"/>
+        <NamedIndividual IRI="#Winterfell"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasMember"/>
+        <NamedIndividual IRI="#Faceless_Men"/>
+        <NamedIndividual IRI="#Arya_Stark"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsMember"/>
+        <NamedIndividual IRI="#Jon_Snow"/>
+        <NamedIndividual IRI="#Northmen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsMember"/>
+        <NamedIndividual IRI="#Jon_Snow"/>
+        <NamedIndividual IRI="#Stark"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsOffspring"/>
+        <NamedIndividual IRI="#Jon_Snow"/>
+        <NamedIndividual IRI="#Eddard_Stark"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsMember"/>
+        <NamedIndividual IRI="#Sansa_Stark"/>
+        <NamedIndividual IRI="#Stark"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsOffspring"/>
+        <NamedIndividual IRI="#Sansa_Stark"/>
+        <NamedIndividual IRI="#Eddard_Stark"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasReligion"/>
+        <NamedIndividual IRI="#Stark"/>
+        <NamedIndividual IRI="#Old_Gods_of_the_Forest"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#LivesIn"/>
+        <NamedIndividual IRI="#Stark"/>
+        <NamedIndividual IRI="#Winterfell"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsPlacedIn"/>
+        <NamedIndividual IRI="#Winterfell"/>
+        <NamedIndividual IRI="#North"/>
+    </ObjectPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#Name"/>
-        <NamedIndividual IRI="#Name"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#Slogan"/>
-        <NamedIndividual IRI="#Slogan"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+        <NamedIndividual IRI="#Arya_Stark"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Arya</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#SocialRange"/>
-        <NamedIndividual IRI="#SocialRange"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+        <NamedIndividual IRI="#Arya_Stark"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Princess</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Alias"/>
+        <NamedIndividual IRI="#Eddard_Stark"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Ned</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Eddard_Stark"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Eddard</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#SocialRange"/>
+        <NamedIndividual IRI="#Eddard_Stark"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Lord of Winterfell</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Faceless_Men"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Faceless men</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Alias"/>
+        <NamedIndividual IRI="#Jon_Snow"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The bastard of Winterfell</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Jon_Snow"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Jon</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Slogan"/>
+        <NamedIndividual IRI="#Jon_Snow"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Lord</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Many-Faced_God"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Many-Faced God</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#North"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">North</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Old_Gods_of_the_Forest"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Old gods of the forest</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Sansa_Stark"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Sansa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Slogan"/>
+        <NamedIndividual IRI="#Sansa_Stark"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Lady</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Stark"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Stark</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Slogan"/>
+        <NamedIndividual IRI="#Stark"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Winter is coming</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Winterfell"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Winterfell</Literal>
     </DataPropertyAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#IsAlly"/>
@@ -351,50 +515,106 @@
         <Body>
             <ClassAtom>
                 <Class IRI="#Animal"/>
-                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#X"/>
             </ClassAtom>
             <ClassAtom>
                 <Class IRI="#Person"/>
-                <Variable IRI="urn:swrl#y"/>
+                <Variable IRI="urn:swrl#Y"/>
             </ClassAtom>
             <ObjectPropertyAtom>
                 <ObjectProperty IRI="#BelongsTo"/>
-                <Variable IRI="urn:swrl#x"/>
-                <Variable IRI="urn:swrl#y"/>
+                <Variable IRI="urn:swrl#X"/>
+                <Variable IRI="urn:swrl#Y"/>
             </ObjectPropertyAtom>
         </Body>
         <Head>
             <ClassAtom>
                 <Class IRI="#Pet"/>
-                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#X"/>
             </ClassAtom>
         </Head>
     </DLSafeRule>
     <DLSafeRule>
         <Body>
             <ClassAtom>
-                <Class IRI="#Person"/>
-                <Variable IRI="urn:swrl#x"/>
+                <Class IRI="#Family"/>
+                <Variable IRI="urn:swrl#X"/>
             </ClassAtom>
             <ClassAtom>
                 <Class IRI="#City"/>
-                <Variable IRI="urn:swrl#y"/>
+                <Variable IRI="urn:swrl#Y"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Person"/>
+                <Variable IRI="urn:swrl#X"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#LivesIn"/>
+                <Variable IRI="urn:swrl#X"/>
+                <Variable IRI="urn:swrl#Y"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#LivesIn"/>
+                <Variable IRI="urn:swrl#Z"/>
+                <Variable IRI="urn:swrl#Y"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Person"/>
+                <Variable IRI="urn:swrl#X"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#City"/>
+                <Variable IRI="urn:swrl#Y"/>
             </ClassAtom>
             <ClassAtom>
                 <Class IRI="#Zone"/>
-                <Variable IRI="urn:swrl#z"/>
+                <Variable IRI="urn:swrl#Z"/>
             </ClassAtom>
             <ObjectPropertyAtom>
                 <ObjectProperty IRI="#IsPlacedIn"/>
-                <Variable IRI="urn:swrl#y"/>
-                <Variable IRI="urn:swrl#z"/>
+                <Variable IRI="urn:swrl#Y"/>
+                <Variable IRI="urn:swrl#Z"/>
             </ObjectPropertyAtom>
         </Body>
         <Head>
             <ObjectPropertyAtom>
                 <ObjectProperty IRI="#IsPlacedIn"/>
-                <Variable IRI="urn:swrl#x"/>
-                <Variable IRI="urn:swrl#z"/>
+                <Variable IRI="urn:swrl#X"/>
+                <Variable IRI="urn:swrl#Z"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Family"/>
+                <Variable IRI="urn:swrl#X"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Person"/>
+                <Variable IRI="urn:swrl#Y"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Religion"/>
+                <Variable IRI="urn:swrl#Z"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#HasReligion"/>
+                <Variable IRI="urn:swrl#X"/>
+                <Variable IRI="urn:swrl#Z"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#HasReligion"/>
+                <Variable IRI="urn:swrl#Y"/>
+                <Variable IRI="urn:swrl#Z"/>
             </ObjectPropertyAtom>
         </Head>
     </DLSafeRule>
@@ -402,33 +622,60 @@
         <Body>
             <ClassAtom>
                 <Class IRI="#Person"/>
-                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#X"/>
             </ClassAtom>
             <ClassAtom>
                 <Class IRI="#Person"/>
-                <Variable IRI="urn:swrl#y"/>
+                <Variable IRI="urn:swrl#Y"/>
             </ClassAtom>
             <ClassAtom>
                 <Class IRI="#Person"/>
-                <Variable IRI="urn:swrl#z"/>
+                <Variable IRI="urn:swrl#Z"/>
             </ClassAtom>
             <ObjectPropertyAtom>
                 <ObjectProperty IRI="#IsOffspring"/>
-                <Variable IRI="urn:swrl#y"/>
-                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#Y"/>
+                <Variable IRI="urn:swrl#X"/>
             </ObjectPropertyAtom>
             <ObjectPropertyAtom>
                 <ObjectProperty IRI="#IsOffspring"/>
-                <Variable IRI="urn:swrl#z"/>
-                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#Z"/>
+                <Variable IRI="urn:swrl#X"/>
             </ObjectPropertyAtom>
         </Body>
         <Head>
             <ObjectPropertyAtom>
                 <ObjectProperty IRI="#IsSibling"/>
-                <Variable IRI="urn:swrl#y"/>
-                <Variable IRI="urn:swrl#z"/>
+                <Variable IRI="urn:swrl#Y"/>
+                <Variable IRI="urn:swrl#Z"/>
             </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Person"/>
+                <Variable IRI="urn:swrl#X"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Person"/>
+                <Variable IRI="urn:swrl#Y"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#IsSibling"/>
+                <Variable IRI="urn:swrl#X"/>
+                <Variable IRI="urn:swrl#Y"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#Sibling"/>
+                <Variable IRI="urn:swrl#X"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Sibling"/>
+                <Variable IRI="urn:swrl#Y"/>
+            </ClassAtom>
         </Head>
     </DLSafeRule>
 </Ontology>
