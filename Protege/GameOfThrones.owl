@@ -285,15 +285,6 @@
         <Class IRI="#Zone"/>
         <Class IRI="#Place"/>
     </SubClassOf>
-    <DisjointClasses>
-        <Class IRI="#Animal"/>
-        <Class IRI="#Family"/>
-        <Class IRI="#Object"/>
-        <Class IRI="#Organization"/>
-        <Class IRI="#Person"/>
-        <Class IRI="#Place"/>
-        <Class IRI="#Religion"/>
-    </DisjointClasses>
     <ClassAssertion>
         <Class IRI="#Person"/>
         <NamedIndividual IRI="#Arya_Stark"/>
@@ -498,10 +489,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Winterfell</Literal>
     </DataPropertyAssertion>
     <EquivalentObjectProperties>
-        <ObjectProperty IRI="#HasMember"/>
-        <ObjectProperty IRI="#HasReligion"/>
-    </EquivalentObjectProperties>
-    <EquivalentObjectProperties>
         <ObjectProperty IRI="#IsPlacedIn"/>
         <ObjectProperty IRI="#LivesIn"/>
     </EquivalentObjectProperties>
@@ -527,10 +514,10 @@
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#HasMember"/>
-        <ObjectProperty IRI="#IsMember"/>
+        <ObjectProperty IRI="#HasReligion"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#HasReligion"/>
+        <ObjectProperty IRI="#HasMember"/>
         <ObjectProperty IRI="#IsMember"/>
     </InverseObjectProperties>
     <ObjectPropertyDomain>
@@ -649,16 +636,6 @@
         <ObjectProperty IRI="#LivesIn"/>
         <Class IRI="#Person"/>
     </ObjectPropertyRange>
-    <DisjointObjectProperties>
-        <ObjectProperty IRI="#BelongsTo"/>
-        <ObjectProperty IRI="#HasMember"/>
-        <ObjectProperty IRI="#HasRelation"/>
-        <ObjectProperty IRI="#HasReligion"/>
-        <ObjectProperty IRI="#IsMember"/>
-        <ObjectProperty IRI="#IsOwner"/>
-        <ObjectProperty IRI="#IsPlacedIn"/>
-        <ObjectProperty IRI="#LivesIn"/>
-    </DisjointObjectProperties>
     <DataPropertyDomain>
         <DataProperty IRI="#Alias"/>
         <Class IRI="#Person"/>
