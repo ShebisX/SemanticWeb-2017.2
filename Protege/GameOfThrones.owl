@@ -1,112 +1,112 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/steevens/ontologies/2018/0/untitled-ontology-3"
+     xml:base="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://www.semanticweb.org/steevens/ontologies/2018/0/untitled-ontology-3">
-    <Prefix name="" IRI="http://www.semanticweb.org/steevens/ontologies/2018/0/untitled-ontology-3#"/>
+     ontologyIRI="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones">
+    <Prefix name="" IRI="http://www.semanticweb.org/steevens/ontologies/GameOfThrones#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
-        <ObjectProperty IRI="#LivesIn"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Organization"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Faceless_Men"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#Alias"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Sibling"/>
+        <DataProperty IRI="#Name"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Place"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Faceless_Men"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Arya_Stark"/>
+        <ObjectProperty IRI="#IsAlly"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Person"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#SocialRange"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#North"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Northmen"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#BelongsTo"/>
+        <Class IRI="#Sibling"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#Slogan"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Member"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Religion"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Pet"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Animal"/>
+        <NamedIndividual IRI="#Arya_Stark"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Sansa_Stark"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#IsSibling"/>
+        <Class IRI="#Religion"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Object"/>
+        <ObjectProperty IRI="#BelongsTo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#SocialRange"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#HasReligion"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Bastard"/>
+        <Class IRI="#Organization"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#City"/>
+        <ObjectProperty IRI="#IsSibling"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Old_Gods_of_the_Forest"/>
+        <NamedIndividual IRI="#Northmen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pet"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#HasRelation"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#IsMarried"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#HasMember"/>
+        <ObjectProperty IRI="#IsPlacedIn"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#IsMember"/>
+        <Class IRI="#Owner"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Eddard_Stark"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#IsPlacedIn"/>
+        <Class IRI="#Animal"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IsMember"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Old_Gods_of_the_Forest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#City"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Object"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Member"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#HasMember"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Jon_Snow"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Stark"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#IsOffspring"/>
@@ -115,25 +115,25 @@
         <Class IRI="#Zone"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Owner"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Winterfell"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#IsOwner"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#IsAlly"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Family"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#HasRelation"/>
+        <NamedIndividual IRI="#Stark"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Many-Faced_God"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#LivesIn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bastard"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Winterfell"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#Bastard"/>
@@ -159,6 +159,13 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Family"/>
+        <ObjectMinCardinality cardinality="2">
+            <ObjectProperty IRI="#HasMember"/>
+            <Class IRI="#Person"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Family"/>
         <ObjectMinCardinality cardinality="1">
             <ObjectProperty IRI="#LivesIn"/>
             <Class IRI="#City"/>
@@ -169,15 +176,39 @@
         <Class IRI="#Person"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Member"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#IsMember"/>
+            <ObjectUnionOf>
+                <Class IRI="#Organization"/>
+                <Class IRI="#Religion"/>
+            </ObjectUnionOf>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Member"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#IsMember"/>
+            <Class IRI="#Family"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Organization"/>
         <ObjectMinCardinality cardinality="2">
             <ObjectProperty IRI="#HasMember"/>
-            <Class IRI="#Person"/>
+            <Class IRI="#Member"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Owner"/>
         <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Owner"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#IsOwner"/>
+            <Class IRI="#Pet"/>
+        </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Person"/>
@@ -219,22 +250,41 @@
         <Class IRI="#Animal"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Pet"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#BelongsTo"/>
+            <Class IRI="#Person"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Religion"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#HasMember"/>
+            <Class IRI="#Member"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Sibling"/>
         <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sibling"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#IsSibling"/>
+            <Class IRI="#Person"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sibling"/>
+        <ObjectExactCardinality cardinality="2">
+            <ObjectProperty IRI="#IsOffspring"/>
+            <Class IRI="#Person"/>
+        </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Zone"/>
         <Class IRI="#Place"/>
     </SubClassOf>
-    <DisjointClasses>
-        <Class IRI="#Animal"/>
-        <Class IRI="#Family"/>
-        <Class IRI="#Object"/>
-        <Class IRI="#Organization"/>
-        <Class IRI="#Person"/>
-        <Class IRI="#Place"/>
-        <Class IRI="#Religion"/>
-    </DisjointClasses>
     <ClassAssertion>
         <Class IRI="#Person"/>
         <NamedIndividual IRI="#Arya_Stark"/>
@@ -439,10 +489,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Winterfell</Literal>
     </DataPropertyAssertion>
     <EquivalentObjectProperties>
-        <ObjectProperty IRI="#HasMember"/>
-        <ObjectProperty IRI="#HasReligion"/>
-    </EquivalentObjectProperties>
-    <EquivalentObjectProperties>
         <ObjectProperty IRI="#IsPlacedIn"/>
         <ObjectProperty IRI="#LivesIn"/>
     </EquivalentObjectProperties>
@@ -468,10 +514,10 @@
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#HasMember"/>
-        <ObjectProperty IRI="#IsMember"/>
+        <ObjectProperty IRI="#HasReligion"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#HasReligion"/>
+        <ObjectProperty IRI="#HasMember"/>
         <ObjectProperty IRI="#IsMember"/>
     </InverseObjectProperties>
     <ObjectPropertyDomain>
@@ -590,16 +636,6 @@
         <ObjectProperty IRI="#LivesIn"/>
         <Class IRI="#Person"/>
     </ObjectPropertyRange>
-    <DisjointObjectProperties>
-        <ObjectProperty IRI="#BelongsTo"/>
-        <ObjectProperty IRI="#HasMember"/>
-        <ObjectProperty IRI="#HasRelation"/>
-        <ObjectProperty IRI="#HasReligion"/>
-        <ObjectProperty IRI="#IsMember"/>
-        <ObjectProperty IRI="#IsOwner"/>
-        <ObjectProperty IRI="#IsPlacedIn"/>
-        <ObjectProperty IRI="#LivesIn"/>
-    </DisjointObjectProperties>
     <DataPropertyDomain>
         <DataProperty IRI="#Alias"/>
         <Class IRI="#Person"/>
@@ -659,10 +695,6 @@
     <DLSafeRule>
         <Body>
             <ClassAtom>
-                <Class IRI="#Animal"/>
-                <Variable IRI="urn:swrl#X"/>
-            </ClassAtom>
-            <ClassAtom>
                 <Class IRI="#Person"/>
                 <Variable IRI="urn:swrl#Y"/>
             </ClassAtom>
@@ -671,6 +703,10 @@
                 <Variable IRI="urn:swrl#X"/>
                 <Variable IRI="urn:swrl#Y"/>
             </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Animal"/>
+                <Variable IRI="urn:swrl#X"/>
+            </ClassAtom>
         </Body>
         <Head>
             <ClassAtom>
@@ -681,8 +717,13 @@
     </DLSafeRule>
     <DLSafeRule>
         <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#LivesIn"/>
+                <Variable IRI="urn:swrl#X"/>
+                <Variable IRI="urn:swrl#Y"/>
+            </ObjectPropertyAtom>
             <ClassAtom>
-                <Class IRI="#Family"/>
+                <Class IRI="#Person"/>
                 <Variable IRI="urn:swrl#X"/>
             </ClassAtom>
             <ClassAtom>
@@ -690,14 +731,9 @@
                 <Variable IRI="urn:swrl#Y"/>
             </ClassAtom>
             <ClassAtom>
-                <Class IRI="#Person"/>
+                <Class IRI="#Family"/>
                 <Variable IRI="urn:swrl#X"/>
             </ClassAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#LivesIn"/>
-                <Variable IRI="urn:swrl#X"/>
-                <Variable IRI="urn:swrl#Y"/>
-            </ObjectPropertyAtom>
         </Body>
         <Head>
             <ObjectPropertyAtom>
@@ -709,14 +745,6 @@
     </DLSafeRule>
     <DLSafeRule>
         <Body>
-            <ClassAtom>
-                <Class IRI="#Person"/>
-                <Variable IRI="urn:swrl#X"/>
-            </ClassAtom>
-            <ClassAtom>
-                <Class IRI="#City"/>
-                <Variable IRI="urn:swrl#Y"/>
-            </ClassAtom>
             <ClassAtom>
                 <Class IRI="#Zone"/>
                 <Variable IRI="urn:swrl#Z"/>
@@ -726,6 +754,14 @@
                 <Variable IRI="urn:swrl#Y"/>
                 <Variable IRI="urn:swrl#Z"/>
             </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Person"/>
+                <Variable IRI="urn:swrl#X"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#City"/>
+                <Variable IRI="urn:swrl#Y"/>
+            </ClassAtom>
         </Body>
         <Head>
             <ObjectPropertyAtom>
@@ -737,10 +773,11 @@
     </DLSafeRule>
     <DLSafeRule>
         <Body>
-            <ClassAtom>
-                <Class IRI="#Family"/>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#HasReligion"/>
                 <Variable IRI="urn:swrl#X"/>
-            </ClassAtom>
+                <Variable IRI="urn:swrl#Z"/>
+            </ObjectPropertyAtom>
             <ClassAtom>
                 <Class IRI="#Person"/>
                 <Variable IRI="urn:swrl#Y"/>
@@ -749,11 +786,10 @@
                 <Class IRI="#Religion"/>
                 <Variable IRI="urn:swrl#Z"/>
             </ClassAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#HasReligion"/>
+            <ClassAtom>
+                <Class IRI="#Family"/>
                 <Variable IRI="urn:swrl#X"/>
-                <Variable IRI="urn:swrl#Z"/>
-            </ObjectPropertyAtom>
+            </ClassAtom>
         </Body>
         <Head>
             <ObjectPropertyAtom>
@@ -767,15 +803,15 @@
         <Body>
             <ClassAtom>
                 <Class IRI="#Person"/>
-                <Variable IRI="urn:swrl#X"/>
-            </ClassAtom>
-            <ClassAtom>
-                <Class IRI="#Person"/>
                 <Variable IRI="urn:swrl#Y"/>
             </ClassAtom>
             <ClassAtom>
                 <Class IRI="#Person"/>
                 <Variable IRI="urn:swrl#Z"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Person"/>
+                <Variable IRI="urn:swrl#X"/>
             </ClassAtom>
             <ObjectPropertyAtom>
                 <ObjectProperty IRI="#IsOffspring"/>
@@ -800,11 +836,11 @@
         <Body>
             <ClassAtom>
                 <Class IRI="#Person"/>
-                <Variable IRI="urn:swrl#X"/>
+                <Variable IRI="urn:swrl#Y"/>
             </ClassAtom>
             <ClassAtom>
                 <Class IRI="#Person"/>
-                <Variable IRI="urn:swrl#Y"/>
+                <Variable IRI="urn:swrl#X"/>
             </ClassAtom>
             <ObjectPropertyAtom>
                 <ObjectProperty IRI="#IsSibling"/>
@@ -815,11 +851,11 @@
         <Head>
             <ClassAtom>
                 <Class IRI="#Sibling"/>
-                <Variable IRI="urn:swrl#X"/>
+                <Variable IRI="urn:swrl#Y"/>
             </ClassAtom>
             <ClassAtom>
                 <Class IRI="#Sibling"/>
-                <Variable IRI="urn:swrl#Y"/>
+                <Variable IRI="urn:swrl#X"/>
             </ClassAtom>
         </Head>
     </DLSafeRule>
