@@ -227,14 +227,13 @@
         <Class IRI="#Place"/>
     </SubClassOf>
     <DisjointClasses>
-        <Class IRI="#City"/>
+        <Class IRI="#Animal"/>
         <Class IRI="#Family"/>
         <Class IRI="#Object"/>
         <Class IRI="#Organization"/>
         <Class IRI="#Person"/>
-        <Class IRI="#Pet"/>
+        <Class IRI="#Place"/>
         <Class IRI="#Religion"/>
-        <Class IRI="#Zone"/>
     </DisjointClasses>
     <ClassAssertion>
         <Class IRI="#Person"/>
@@ -439,6 +438,14 @@
         <NamedIndividual IRI="#Winterfell"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Winterfell</Literal>
     </DataPropertyAssertion>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="#HasMember"/>
+        <ObjectProperty IRI="#HasReligion"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="#IsPlacedIn"/>
+        <ObjectProperty IRI="#LivesIn"/>
+    </EquivalentObjectProperties>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#IsAlly"/>
         <ObjectProperty IRI="#HasRelation"/>
@@ -455,6 +462,144 @@
         <ObjectProperty IRI="#IsSibling"/>
         <ObjectProperty IRI="#HasRelation"/>
     </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#BelongsTo"/>
+        <ObjectProperty IRI="#IsOwner"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#HasMember"/>
+        <ObjectProperty IRI="#IsMember"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#HasReligion"/>
+        <ObjectProperty IRI="#IsMember"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#BelongsTo"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#BelongsTo"/>
+        <Class IRI="#Pet"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HasMember"/>
+        <Class IRI="#Organization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HasMember"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HasMember"/>
+        <Class IRI="#Religion"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HasRelation"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HasReligion"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HasReligion"/>
+        <Class IRI="#Religion"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IsMember"/>
+        <Class IRI="#Organization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IsMember"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IsMember"/>
+        <Class IRI="#Religion"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IsOffspring"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IsOwner"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IsOwner"/>
+        <Class IRI="#Pet"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IsPlacedIn"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IsPlacedIn"/>
+        <Class IRI="#Place"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#LivesIn"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#BelongsTo"/>
+        <Class IRI="#Pet"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#HasMember"/>
+        <Class IRI="#Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#HasMember"/>
+        <Class IRI="#Religion"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#HasRelation"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#HasReligion"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#HasReligion"/>
+        <Class IRI="#Religion"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#IsMember"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#IsOffspring"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#IsOwner"/>
+        <Class IRI="#Pet"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#IsPlacedIn"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#IsPlacedIn"/>
+        <Class IRI="#Place"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#LivesIn"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="#BelongsTo"/>
+        <ObjectProperty IRI="#HasMember"/>
+        <ObjectProperty IRI="#HasRelation"/>
+        <ObjectProperty IRI="#HasReligion"/>
+        <ObjectProperty IRI="#IsMember"/>
+        <ObjectProperty IRI="#IsOwner"/>
+        <ObjectProperty IRI="#IsPlacedIn"/>
+        <ObjectProperty IRI="#LivesIn"/>
+    </DisjointObjectProperties>
     <DataPropertyDomain>
         <DataProperty IRI="#Alias"/>
         <Class IRI="#Person"/>
