@@ -1,1 +1,10 @@
 # Zona y ciudad en la que viven la familia Stark
+PREFIX ontology: <http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#>
+PREFIX schema: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX syntax: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT ?family ?city ?zone
+WHERE {
+	?family ontology:Name 'Stark';
+			ontology:LivesIn ?city.
+	?city ontology:IsPlacedIn ?zone
+}

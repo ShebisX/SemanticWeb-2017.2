@@ -1,0 +1,565 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones"
+     xml:base="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:GameOfThrones="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#BelongsTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#BelongsTo">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#IsOwner"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Person"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Pet"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Pet"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#HasMember -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#HasMember">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#HasReligion"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#IsMember"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Organization"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Person"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Religion"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Organization"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Religion"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#HasRelation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#HasRelation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#HasReligion -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#HasReligion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Person"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Religion"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Religion"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#IsAlly -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#IsAlly">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#HasRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#IsMarried -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#IsMarried">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#HasRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#IsMember -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#IsMember">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Organization"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Person"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Religion"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#IsOffspring -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#IsOffspring">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#HasRelation"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#IsOwner -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#IsOwner">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Person"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Pet"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Pet"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#IsPlacedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#IsPlacedIn">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#LivesIn"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Person"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Place"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#IsSibling -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#IsSibling">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#HasRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#LivesIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#LivesIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Alias -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Alias">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Animal"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Family"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Object"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Organization"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Person"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Place"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Religion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Slogan -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Slogan">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Family"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#SocialRange -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#SocialRange">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Animal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Animal"/>
+    
+
+
+    <!-- http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Bastard -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Bastard">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#City">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Place"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#IsPlacedIn"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Zone"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Family -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Family">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#HasReligion"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Religion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#HasMember"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#LivesIn"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#City"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Member -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Member">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#IsMember"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Organization"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Religion"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:onClass>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#IsMember"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Family"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Object -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Object"/>
+    
+
+
+    <!-- http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Organization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Organization">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#HasMember"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Member"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Owner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Owner">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#IsOwner"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Pet"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Person">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#HasRelation"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#IsOwner"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Pet"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#IsMember"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Family"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#LivesIn"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#City"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#HasReligion"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Religion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Pet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Pet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Animal"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#BelongsTo"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Place -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Place"/>
+    
+
+
+    <!-- http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Religion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Religion">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#HasMember"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Member"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Sibling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Sibling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#IsSibling"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#IsOffspring"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Zone -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Zone">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Arya_Stark -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Arya_Stark">
+        <rdf:type rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Person"/>
+        <GameOfThrones:HasReligion rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Many-Faced_God"/>
+        <GameOfThrones:IsMember rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Stark"/>
+        <GameOfThrones:IsOffspring rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Eddard_Stark"/>
+        <GameOfThrones:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arya</GameOfThrones:Name>
+        <GameOfThrones:SocialRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Princess</GameOfThrones:SocialRange>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Eddard_Stark -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Eddard_Stark">
+        <rdf:type rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Person"/>
+        <GameOfThrones:IsMember rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Stark"/>
+        <GameOfThrones:LivesIn rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Winterfell"/>
+        <GameOfThrones:Alias>Ned</GameOfThrones:Alias>
+        <GameOfThrones:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eddard</GameOfThrones:Name>
+        <GameOfThrones:SocialRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lord of Winterfell</GameOfThrones:SocialRange>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Faceless_Men -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Faceless_Men">
+        <rdf:type rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Organization"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Religion"/>
+        <GameOfThrones:HasMember rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Arya_Stark"/>
+        <GameOfThrones:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Faceless men</GameOfThrones:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Jon_Snow -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Jon_Snow">
+        <rdf:type rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Person"/>
+        <GameOfThrones:IsMember rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Northmen"/>
+        <GameOfThrones:IsMember rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Stark"/>
+        <GameOfThrones:IsOffspring rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Eddard_Stark"/>
+        <GameOfThrones:Alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The bastard of Winterfell</GameOfThrones:Alias>
+        <GameOfThrones:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jon</GameOfThrones:Name>
+        <GameOfThrones:Slogan rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lord</GameOfThrones:Slogan>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Many-Faced_God -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Many-Faced_God">
+        <rdf:type rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Religion"/>
+        <GameOfThrones:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Many-Faced God</GameOfThrones:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#North -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#North">
+        <rdf:type rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Zone"/>
+        <GameOfThrones:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">North</GameOfThrones:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Northmen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Northmen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Organization"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Old_Gods_of_the_Forest -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Old_Gods_of_the_Forest">
+        <rdf:type rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Religion"/>
+        <GameOfThrones:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Old gods of the forest</GameOfThrones:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Sansa_Stark -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Sansa_Stark">
+        <rdf:type rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Person"/>
+        <GameOfThrones:IsMember rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Stark"/>
+        <GameOfThrones:IsOffspring rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Eddard_Stark"/>
+        <GameOfThrones:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sansa</GameOfThrones:Name>
+        <GameOfThrones:Slogan rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lady</GameOfThrones:Slogan>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Stark -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Stark">
+        <rdf:type rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Family"/>
+        <GameOfThrones:HasReligion rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Old_Gods_of_the_Forest"/>
+        <GameOfThrones:LivesIn rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Winterfell"/>
+        <GameOfThrones:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stark</GameOfThrones:Name>
+        <GameOfThrones:Slogan rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Winter is coming</GameOfThrones:Slogan>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Winterfell -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Winterfell">
+        <rdf:type rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#City"/>
+        <GameOfThrones:IsPlacedIn rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#North"/>
+        <GameOfThrones:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Winterfell</GameOfThrones:Name>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
