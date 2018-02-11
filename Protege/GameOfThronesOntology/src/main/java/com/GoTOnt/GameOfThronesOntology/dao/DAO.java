@@ -5,7 +5,7 @@ import java.util.List;
 import com.GoTOnt.GameOfThronesOntology.model.BaseObject;
 import com.GoTOnt.GameOfThronesOntology.query.SimpleQueryBuilder;
 
-public abstract class DAO {
+public abstract class DAO<T extends BaseObject> {
 
 	private SimpleQueryBuilder queryBuilder;
 
@@ -13,7 +13,7 @@ public abstract class DAO {
 		this.queryBuilder = queryBuilder;
 	}
 
-	public abstract List<BaseObject> getAll();
+	public abstract List<T> getAll();
 
-	public abstract BaseObject get(BaseObject BaseObject);
+	public abstract T get(String uri);
 }

@@ -2,10 +2,10 @@ package com.GoTOnt.GameOfThronesOntology.dao;
 
 import java.util.List;
 
-import com.GoTOnt.GameOfThronesOntology.model.BaseObject;
+import com.GoTOnt.GameOfThronesOntology.model.Religion;
 import com.GoTOnt.GameOfThronesOntology.query.SimpleQueryBuilder;
 
-public class DAOReligion extends DAO {
+public class DAOReligion extends DAO<Religion> {
 
 	public DAOReligion(SimpleQueryBuilder queryBuilder) {
 		super(queryBuilder);
@@ -13,13 +13,13 @@ public class DAOReligion extends DAO {
 	}
 
 	@Override
-	public List<BaseObject> getAll() {
+	public List<Religion> getAll() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public BaseObject get(BaseObject BaseObject) {
+	public Religion get(String uri) {
 		// TODO Auto-generated method stub
 		return null;
 	}

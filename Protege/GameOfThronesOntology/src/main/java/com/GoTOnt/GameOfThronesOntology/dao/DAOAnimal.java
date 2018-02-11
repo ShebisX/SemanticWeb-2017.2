@@ -2,10 +2,10 @@ package com.GoTOnt.GameOfThronesOntology.dao;
 
 import java.util.List;
 
-import com.GoTOnt.GameOfThronesOntology.model.BaseObject;
+import com.GoTOnt.GameOfThronesOntology.model.Animal;
 import com.GoTOnt.GameOfThronesOntology.query.SimpleQueryBuilder;
 
-public class DAOAnimal extends DAO {
+public class DAOAnimal extends DAO<Animal> {
 
 	public DAOAnimal(SimpleQueryBuilder queryBuilder) {
 		super(queryBuilder);
@@ -13,13 +13,13 @@ public class DAOAnimal extends DAO {
 	}
 
 	@Override
-	public List<BaseObject> getAll() {
+	public List<Animal> getAll() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public BaseObject get(BaseObject BaseObject) {
+	public Animal get(String uri) {
 		// TODO Auto-generated method stub
 		return null;
 	}

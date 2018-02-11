@@ -4,9 +4,9 @@ import java.util.List;
 
 import com.GoTOnt.GameOfThronesOntology.model.BaseObject;
 
-public interface ControllerBase {
+public interface ControllerBase<T extends BaseObject> {
 
-	public List<BaseObject> getAll();
+	public abstract List<T> getAll();
 
-	public BaseObject get(String uri);
+	public abstract T get(String uri);
 }
