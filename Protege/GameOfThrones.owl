@@ -6,7 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones">
-    <Prefix name="" IRI="http://www.semanticweb.org/steevens/ontologies/GameOfThrones#"/>
+    <Prefix name="" IRI="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -52,10 +52,10 @@
         <ObjectProperty IRI="#BelongsTo"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#SocialRange"/>
+        <ObjectProperty IRI="#HasReligion"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#HasReligion"/>
+        <DataProperty IRI="#SocialRange"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Organization"/>
@@ -67,10 +67,10 @@
         <NamedIndividual IRI="#Northmen"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Pet"/>
+        <ObjectProperty IRI="#HasRelation"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#HasRelation"/>
+        <Class IRI="#Pet"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#IsMarried"/>
@@ -82,19 +82,19 @@
         <Class IRI="#Owner"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Eddard_Stark"/>
+        <Class IRI="#Animal"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Animal"/>
+        <NamedIndividual IRI="#Eddard_Stark"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#IsMember"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Old_Gods_of_the_Forest"/>
+        <Class IRI="#City"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Old_Gods_of_the_Forest"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Object"/>
@@ -118,13 +118,13 @@
         <ObjectProperty IRI="#IsOwner"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Family"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#Stark"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Many-Faced_God"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Family"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#LivesIn"/>
@@ -457,6 +457,11 @@
         <DataProperty IRI="#Name"/>
         <NamedIndividual IRI="#North"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">North</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Northmen"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Northmen</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#Name"/>

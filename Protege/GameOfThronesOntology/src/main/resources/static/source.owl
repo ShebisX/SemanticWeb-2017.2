@@ -1,10 +1,9 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones"
+<rdf:RDF xmlns="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#"
      xml:base="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:GameOfThrones="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones"/>
@@ -444,11 +443,11 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Arya_Stark">
         <rdf:type rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Person"/>
-        <GameOfThrones:HasReligion rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Many-Faced_God"/>
-        <GameOfThrones:IsMember rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Stark"/>
-        <GameOfThrones:IsOffspring rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Eddard_Stark"/>
-        <GameOfThrones:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arya</GameOfThrones:Name>
-        <GameOfThrones:SocialRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Princess</GameOfThrones:SocialRange>
+        <HasReligion rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Many-Faced_God"/>
+        <IsMember rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Stark"/>
+        <IsOffspring rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Eddard_Stark"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arya</Name>
+        <SocialRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Princess</SocialRange>
     </owl:NamedIndividual>
     
 
@@ -457,11 +456,11 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Eddard_Stark">
         <rdf:type rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Person"/>
-        <GameOfThrones:IsMember rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Stark"/>
-        <GameOfThrones:LivesIn rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Winterfell"/>
-        <GameOfThrones:Alias>Ned</GameOfThrones:Alias>
-        <GameOfThrones:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eddard</GameOfThrones:Name>
-        <GameOfThrones:SocialRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lord of Winterfell</GameOfThrones:SocialRange>
+        <IsMember rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Stark"/>
+        <LivesIn rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Winterfell"/>
+        <Alias>Ned</Alias>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eddard</Name>
+        <SocialRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lord of Winterfell</SocialRange>
     </owl:NamedIndividual>
     
 
@@ -471,8 +470,8 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Faceless_Men">
         <rdf:type rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Organization"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Religion"/>
-        <GameOfThrones:HasMember rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Arya_Stark"/>
-        <GameOfThrones:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Faceless men</GameOfThrones:Name>
+        <HasMember rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Arya_Stark"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Faceless men</Name>
     </owl:NamedIndividual>
     
 
@@ -481,12 +480,12 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Jon_Snow">
         <rdf:type rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Person"/>
-        <GameOfThrones:IsMember rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Northmen"/>
-        <GameOfThrones:IsMember rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Stark"/>
-        <GameOfThrones:IsOffspring rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Eddard_Stark"/>
-        <GameOfThrones:Alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The bastard of Winterfell</GameOfThrones:Alias>
-        <GameOfThrones:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jon</GameOfThrones:Name>
-        <GameOfThrones:Slogan rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lord</GameOfThrones:Slogan>
+        <IsMember rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Northmen"/>
+        <IsMember rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Stark"/>
+        <IsOffspring rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Eddard_Stark"/>
+        <Alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The bastard of Winterfell</Alias>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jon</Name>
+        <Slogan rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lord</Slogan>
     </owl:NamedIndividual>
     
 
@@ -495,7 +494,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Many-Faced_God">
         <rdf:type rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Religion"/>
-        <GameOfThrones:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Many-Faced God</GameOfThrones:Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Many-Faced God</Name>
     </owl:NamedIndividual>
     
 
@@ -504,7 +503,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#North">
         <rdf:type rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Zone"/>
-        <GameOfThrones:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">North</GameOfThrones:Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">North</Name>
     </owl:NamedIndividual>
     
 
@@ -513,6 +512,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Northmen">
         <rdf:type rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Organization"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Northmen</Name>
     </owl:NamedIndividual>
     
 
@@ -521,7 +521,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Old_Gods_of_the_Forest">
         <rdf:type rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Religion"/>
-        <GameOfThrones:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Old gods of the forest</GameOfThrones:Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Old gods of the forest</Name>
     </owl:NamedIndividual>
     
 
@@ -530,10 +530,10 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Sansa_Stark">
         <rdf:type rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Person"/>
-        <GameOfThrones:IsMember rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Stark"/>
-        <GameOfThrones:IsOffspring rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Eddard_Stark"/>
-        <GameOfThrones:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sansa</GameOfThrones:Name>
-        <GameOfThrones:Slogan rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lady</GameOfThrones:Slogan>
+        <IsMember rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Stark"/>
+        <IsOffspring rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Eddard_Stark"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sansa</Name>
+        <Slogan rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lady</Slogan>
     </owl:NamedIndividual>
     
 
@@ -542,10 +542,10 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Stark">
         <rdf:type rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Family"/>
-        <GameOfThrones:HasReligion rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Old_Gods_of_the_Forest"/>
-        <GameOfThrones:LivesIn rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Winterfell"/>
-        <GameOfThrones:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stark</GameOfThrones:Name>
-        <GameOfThrones:Slogan rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Winter is coming</GameOfThrones:Slogan>
+        <HasReligion rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Old_Gods_of_the_Forest"/>
+        <LivesIn rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Winterfell"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stark</Name>
+        <Slogan rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Winter is coming</Slogan>
     </owl:NamedIndividual>
     
 
@@ -554,8 +554,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#Winterfell">
         <rdf:type rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#City"/>
-        <GameOfThrones:IsPlacedIn rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#North"/>
-        <GameOfThrones:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Winterfell</GameOfThrones:Name>
+        <IsPlacedIn rdf:resource="http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#North"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Winterfell</Name>
     </owl:NamedIndividual>
 </rdf:RDF>
 

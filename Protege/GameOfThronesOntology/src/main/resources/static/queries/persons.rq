@@ -1,0 +1,18 @@
+# Person info
+
+PREFIX ontology: <http://www.semanticweb.org/SemanticWeb_UCaldas/2017-2/ontologies/GameOfThrones#>
+PREFIX schema: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX syntax: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT *
+WHERE {
+	{
+		?p syntax:type ontology:Person.
+		?p ontology:Name ?name.
+	}
+	
+	OPTIONAL { ?p ontology:Alias ?alias. }
+	OPTIONAL { ?p ontology:IsMember ?x. }
+	OPTIONAL { ?x syntax:type ?typeX.
+		?x ontology:Name ?nameX. }
+}

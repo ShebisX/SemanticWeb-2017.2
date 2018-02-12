@@ -2,7 +2,7 @@ package com.GoTOnt.GameOfThronesOntology.model;
 
 public class Animal extends BaseObject {
 
-	public Animal(String name) {
-		super(name);
+	public Animal(String name, String uri) {
+		super(name, uri);
 	}
 }
