@@ -61,7 +61,10 @@ public class DAOFamily extends DAO<Family> {
 			}
 
 			Family familyRelationEnd = getFamily(families, row, family);
-
+			
+			if (row.contains("slogan")) {
+				familyRelationEnd.slogan = row.get("slogan").toString();
+			}
 			// if (row.contains("p")) {
 			// String person = row.get("p").toString();
 			// String personName = row.get("personName").toString();

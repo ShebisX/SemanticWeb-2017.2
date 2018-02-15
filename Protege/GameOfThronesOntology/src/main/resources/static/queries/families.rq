@@ -8,6 +8,7 @@ SELECT *
 WHERE {
 	?family syntax:type ontology:Family.
 	?family ontology:Name ?familyName.
+	?family ontology:Slogan ?slogan.
 
 	OPTIONAL { ?p syntax:type ontology:Person.
 		?p ontology:IsMember ?family.
