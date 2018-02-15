@@ -1,0 +1,22 @@
+<h2>Organizations</h2>
+
+<div>
+  <ul>
+    <li *ngFor="let organization of organizations"
+      [class.selected]="organization === selectedOrganization"
+      (click)="onSelect(organization)">
+
+      <p>{{organization.name}}</p>
+    </li>
+  </ul>
+
+  <div *ngIf="selectedOrganization">
+    <h3>
+      {{selectedOrganization.name | uppercase}}
+    </h3>
+    <span>
+        <h2>Ontology uri:</h2>
+        <p>{{selectedOrganization.uri}}</p>
+    </span>
+  </div>
+</div>

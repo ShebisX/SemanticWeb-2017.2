@@ -1,0 +1,22 @@
+<h2>Religions</h2>
+
+<div>
+  <ul>
+    <li *ngFor="let religion of religions"
+      [class.selected]="religion === selectedReligion"
+      (click)="onSelect(religion)">
+
+      <p>{{religion.name}}</p>
+    </li>
+  </ul>
+
+  <div *ngIf="selectedReligion">
+    <h3>
+      {{selectedReligion.name | uppercase}}
+    </h3>
+    <span>
+        <h2>Ontology uri:</h2>
+        <p>{{selectedReligion.uri}}</p>
+    </span>
+  </div>
+</div>

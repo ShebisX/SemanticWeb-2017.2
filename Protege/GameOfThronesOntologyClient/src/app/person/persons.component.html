@@ -1,0 +1,26 @@
+<h2>Persons</h2>
+
+<div>
+  <ul>
+    <li *ngFor="let person of persons"
+      [class.selected]="person === selectedPerson"
+      (click)="onSelect(person)">
+
+      <p>{{person.name}}</p>
+    </li>
+  </ul>
+
+  <div *ngIf="selectedPerson">
+    <h3>
+      {{selectedPerson.name | uppercase}}
+    </h3>
+    <span>
+        <h2>Alias:</h2>
+        <p>{{selectedPerson.alias}}</p>
+    </span>
+    <span>
+        <h2>Ontology uri:</h2>
+        <p>{{selectedPerson.uri}}</p>
+    </span>
+  </div>
+</div>

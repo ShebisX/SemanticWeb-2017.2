@@ -1,0 +1,26 @@
+<h2>Families</h2>
+
+<div>
+  <ul>
+    <li *ngFor="let family of families"
+      [class.selected]="family === selectedFamily"
+      (click)="onSelect(family)">
+
+      <p>{{family.name}}</p>
+    </li>
+  </ul>
+
+  <div *ngIf="selectedFamily">
+    <h3>
+      {{selectedFamily.name | uppercase}}
+    </h3>
+    <span>
+        <h2>Slogan:</h2>
+        <p>{{selectedFamily.slogan}}</p>
+    </span>
+    <span>
+        <h2>Ontology uri:</h2>
+        <p>{{selectedFamily.uri}}</p>
+    </span>
+  </div>
+</div>
